@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>Travel Safe | Know your location</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><span>J</span>Travels</div>
+      <ul class="nav__links">
+        <li class="link">Stories</li>
+        <li class="link">Plans</li>
+        <a href="#about"><li class="link">About Us</li></a>
+        <li class="link">Contact Us</li>
+        <li class="link">Travel Guides</li>
+        <a href="#query"><li class="link btn">Any Query?</li></a>
+      </ul>
+    </nav>
+
+
+    <!-- Landing Section Start -->
+    <section class="home">
+      <div class="content">
+          <h5>Welcome To Kenya</h5>
+          <h1>Visit <span class="changecontent"></span></h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, nisi.</p>
+          
+      </div>
+    </section>
+  <!-- Landing Section End -->
+
+
+    <!-- BuyMeCoffee Floating Button -->
+    <div id="buyMeCoffeeBtn" class="floating-btn">BuyMeCoffee</div>
+
+    <!-- Pop-up Card -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <img src="assets\coffee1.jpg" alt="Coffee" class="coffee-img">
+            <p>At Ksh.10</p>
+            <div class="payment-options">
+                <button onclick="payViaMpesa()">Pay via M-Pesa</button>
+                <button onclick="payViaVisa()">Pay via Visa</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Story section starts -->
+    <section class="story">
+      <div class="section__container story__container">
+        <div class="story__image">
+          <img src="assets/story.jpg" alt="story" />
+        </div>
+        <div class="story__content">
+          <p class="section__subheader">A story about a journey</p>
+          <h2 class="section__header">Kisumu Dala trip in december</h2>
+          <p class="title">
+            <span><i class="ri-calendar-2-fill"></i> Jan-06-2023</span>
+            <span><i class="ri-user-3-fill"></i> By Simon</span>
+          </p>
+          <p class="description">
+            Experience the magic of Kisumu, Dala with JTravels in December! Our
+            expertly curated trip will take you on an unforgettable journey
+            through this vibrant and captivating country. Discover the stunning
+            beaches of lake Victoria, where you can bask in the warm tropical sun and indulge
+            in water sports.<br /><br />JTravels, your trusted travel partner,
+            ensures a seamless and well-planned itinerary, including
+            accommodations, transportation, and expert guides. Book your
+            adventure with JTravels today and create lasting memories in
+            the Land of Smiles.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+
+
+
+<!-- Planning starts -->
+    <section class="section__container price__container">
+      <p class="section__subheader">Planning</p>
+      <h2 class="section__header">Check your tour plans</h2>
+
+      <div class="price__grid">
+
+        <div class="price__card">
+          <img src="assets\IMG-20240506-WA0154.jpg" alt="price" />
+          <div class="details">
+            <span>Travel tour</span>
+            <span>$455/Person</span>
+          </div>
+          <h4>Water brings about beauty</h4>
+          <div class="price__card__footer">
+            <span class="location">
+              <i class="ri-map-pin-2-fill"></i> Kipkaren
+            </span>
+            <span class="rating"><i class="ri-star-fill"></i> 5.0</span>
+          </div>
+        </div>
+
+        <div class="price__card">
+          <img src="assets\IMG-20240506-WA0153.jpg" alt="price" />
+          <div class="details">
+            <span>Travel tour</span>
+            <span>$405/Person</span>
+          </div>
+          <h4>Get to see the fastest animal in its habitat</h4>
+          <div class="price__card__footer">
+            <span class="location">
+              <i class="ri-map-pin-2-fill"></i> NB National Park
+            </span>
+            <span class="rating"><i class="ri-star-fill"></i> 4.8</span>
+          </div>
+        </div>
+
+        <div class="price__card">
+          <img src="assets\IMG-20240506-WA0155.jpg" alt="price" />
+          <div class="details">
+            <span>Travel tour</span>
+            <span>$355/Person</span>
+          </div>
+          <h4>Make your adventures comfortable</h4>
+          <div class="price__card__footer">
+            <span class="location">
+              <i class="ri-map-pin-2-fill"></i> Naivasha
+            </span>
+            <span class="rating"><i class="ri-star-fill"></i> 4.6</span>
+          </div>
+        </div>
+
+        <div class="price__card">
+          <img src="assets\IMG-20240506-WA0150.jpg" alt="price" />
+          <div class="details">
+            <span>Travel tour</span>
+            <span>$400/Person</span>
+          </div>
+          <h4>Explore the terrains of Mau Forest</h4>
+          <div class="price__card__footer">
+            <span class="location">
+              <i class="ri-map-pin-2-fill"></i> Mau Forest
+            </span>
+            <span class="rating"><i class="ri-star-fill"></i> 4.9</span>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- Planning ends -->
+
+
+     <!-- Section Gallary Start -->
+     <section class="section__container" id="gallary">
+      
+      <p class="section__subheader">Gallery</p>
+      <h2 class="section__header">Get to see some of our collections</h2>
+        <div class="gcontainer">
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="assets\IMG-20240508-WA0128.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="assets\IMG-20240508-WA0127.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="assets\IMG-20240508-WA0123.jpg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="assets\IMG-20240508-WA0118.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="assets\IMG-20240506-WA0156.jpg" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="assets\IMG-20240506-WA0155.jpg" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="assets\india.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="assets\italy.png" alt="" height="230px">
+            </div>
+          </div>
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="assets\pakistan.png" alt="" height="230px">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Section Gallary End -->
+
+
+    <section class="client">
+      <div class="section__container client__container">
+        <p class="section__subheader">Testimonials</p>
+        <h2 class="section__header">What our clients say about us</h2>
+        <div class="client__grid">
+          <div class="client__card">
+            <img src="assets\AirBrush_20231103204037.jpg" alt="client" />
+            <h4>Exceptional Service and Support</h4>
+            <p>
+              JTravels provided exceptional service and support throughout our
+              trip. Their attention to detail and prompt assistance made our
+              journey smooth and worry-free.
+            </p>
+            <span><i class="ri-double-quotes-l"></i></span>
+          </div>
+          <div class="client__card">
+            <img src="assets\AirBrush_20231103204037.jpg" alt="client" />
+            <h4>Cultural Immersion at its Best</h4>
+            <p>
+              Thanks to JTravels, we experienced cultural immersion at its best.
+              From temple visits to local interactions, we felt truly connected
+              to the heart and soul of Kisumu.
+            </p>
+            <span><i class="ri-double-quotes-l"></i></span>
+          </div>
+          <div class="client__card">
+            <img src="assets\AirBrush_20231103204037.jpg" alt="client" />
+            <h4>Memories that Last a Lifetime</h4>
+            <p>
+              JTravels helped us create memories that will last a lifetime. The
+              well-planned itinerary and unique experiences made our trip to
+              Kisumu truly unforgettable.
+            </p>
+            <span><i class="ri-double-quotes-l"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="query" class="section__container contact__container">
+      <p class="section__subheader">Contact us</p>
+      <h2 class="section__header">Feel free to ask anything to us</h2>
+      <form>
+        <input type="text" placeholder="Full Name" />
+        <input type="text" placeholder="Phone Number" />
+        <input type="text" placeholder="Country" />
+        <input type="text" placeholder="Ask us anything" />
+        <button class="btn">Send Query</button>
+      </form>
+    </section>
+
+    <section class="banner">
+        <iframe
+            width="100%"
+            height="450"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=LOCATION&zoom=15&style=mapStyle"
+            allowfullscreen>
+        </iframe>
+
+      <!-- <div class="section__container banner__container">
+        <h4>
+          Subscribe to our newsletter and receive exclusive offers every week
+        </h4>
+        <form>
+          <input type="text" placeholder="Enter your email" />
+          <button>Subscribe</button>
+        </form>
+      </div> -->
+    </section>
+
+    <footer>
+      <div class="section__container footer__container">
+        <div id="about" class="footer__col">
+          <h4>About Us</h4>
+          <p>
+            JTravels is your trusted travel agent specializing in giving guides and locations of different sites for show. We provide exceptional service to cater
+            to your travel needs and preferences.<br /><br />Connect with us and embark on a transformative journey that will
+            create cherished memories for a lifetime.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Travel Info</h4>
+          <p>Stories</p>
+          <p>Plans</p>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Travel Guides</p>
+        </div>
+        <div class="footer__col">
+          <h4>Information</h4>
+          <p>Gift Cards</p>
+          <p>Find a Package</p>
+          <p>Discounts</p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <p>Copyright © 2023 Travel Safe | Know Your Location. All rights reserved.</p>
+        <div class="socials">
+          <span><i class="ri-facebook-fill"></i></span>
+          <span><i class="ri-twitter-fill"></i></span>
+          <span><i class="ri-linkedin-box-fill"></i></span>
+          <span><i class="ri-pinterest-line"></i></span>
+          <span><i class="ri-youtube-fill"></i></span>
+        </div>
+      </div>
+    </footer>
+    <script src="toggle.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+  </body>
+</html>
